@@ -8,6 +8,7 @@ public class StudentMedicalTest {
     public void horasTrabajoSemanalTest(){
         assert student.horasTrabajoSemanal()==10;
     }
+
     @Test
     public void cursoActualTest(){
         assert student.CursoActual().equals("Primero de medicina");
