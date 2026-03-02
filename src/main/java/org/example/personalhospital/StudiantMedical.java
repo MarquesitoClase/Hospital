@@ -5,7 +5,11 @@ public class StudiantMedical implements DoctorsInterface{
     int semanalWorkHours;
     String cursoActual;
 
-
+    public StudiantMedical(int semanalStudyHours, int semanalWorkHours, String cursoActual) {
+        this.semanalStudyHours = semanalStudyHours;
+        this.semanalWorkHours = semanalWorkHours;
+        this.cursoActual = cursoActual;
+    }
 
     @Override
     public int horasTrabajoSemanal() {
