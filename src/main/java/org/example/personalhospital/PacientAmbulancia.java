@@ -18,4 +18,15 @@ public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInte
     public void operacion() {
         System.out.println("El paciente "+name+" se llevo a operarse.");
     }
+
+    @Override
+    public String toString() {
+        return "PacientAmbulancia{" +
+                "name='" + name + '\'' +
+                ", incomeDate=" + incomeDate +
+                ", outcomingDate=" + outcomingDate +
+                ", habitacion=" + habitacion +
+                ", Tratamiento='" + Tratamiento + '\'' +
+                '}';
+    }
 }
