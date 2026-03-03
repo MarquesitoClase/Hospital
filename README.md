@@ -2,7 +2,7 @@
 
 Proyecto desarrollado en **Java (Vanilla)** utilizando **Maven** como gestor de dependencias.
 
-El objetivo del proyecto es modelar la gestión básica de un hospital mediante clases y pruebas unitarias.
+El objetivo del proyecto poner en practica la POO y los principios SOLID (principalmente).
 
 ---
 
