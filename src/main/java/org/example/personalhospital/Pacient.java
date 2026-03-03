@@ -80,4 +80,15 @@ public class Pacient extends Characters implements PacientsInterface {
     public void setTratamiento(String tratamiento) {
         Tratamiento = tratamiento;
     }
+
+    @Override
+    public String toString() {
+        return "Pacient{" +
+                "name='" + name + '\'' +
+                ", incomeDate=" + incomeDate +
+                ", outcomingDate=" + outcomingDate +
+                ", habitacion=" + habitacion +
+                ", Tratamiento='" + Tratamiento + '\'' +
+                '}';
+    }
 }

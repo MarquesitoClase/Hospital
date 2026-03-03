@@ -27,5 +27,6 @@ public class Main {
                 "Segundo");
         StudiantMedical studiantMedical2 = new StudiantMedical(50, 17,
                 "Tercero");
+        System.out.println();
     }
 }
