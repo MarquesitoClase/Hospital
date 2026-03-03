@@ -62,4 +62,14 @@ public class Especialist extends Characters implements DoctorsInterface{
         return (LocalDate.now().isAfter(inicioVacaciones)) &&
                 (LocalDate.now().isBefore(inicioVacaciones.plusDays(diasVacaciones)));
     }
+
+    @Override
+    public String toString() {
+        return "Especialist{" +
+                "inicioVacaciones=" + inicioVacaciones +
+                ", diasVacaciones=" + diasVacaciones +
+                ", horasTrabajoSemanal=" + horasTrabajoSemanal +
+                ", especialidad='" + especialidad + '\'' +
+                '}';
+    }
 }
