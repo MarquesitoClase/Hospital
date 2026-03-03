@@ -18,16 +18,16 @@ Hospital/
 │   │   │   └── org/
 │   │   │       └── example/
 │   │   │           └── personalhospital/
-│   │   │               ├── Characters.java(abstract)
-│   │   │               ├── DoctorsInterface.java
-│   │   │               ├── Especialist.java
-│   │   │               ├── Pacient.java
-│   │   │               ├── PacientAmbulancia.java
-│   │   │               ├── PacienteAmbulanciaInterface.java
-│   │   │               ├── PacienteConsultaInterface.java
-│   │   │               ├── PacientsInterface.java
-│   │   │               ├── StudiantMedical.java
-│   │   │               └── Main.java
+│   │   │           |    ├── Characters.java(abstract)
+│   │   │           |    ├── DoctorsInterface.java
+│   │   │           |    ├── Especialist.java
+│   │   │           |    ├── Pacient.java
+│   │   │           |    ├── PacientAmbulancia.java
+│   │   │           |    ├── PacienteAmbulanciaInterface.java
+│   │   │           |    ├── PacienteConsultaInterface.java
+│   │   │           |    ├── PacientsInterface.java
+│   │   │           |    ├── StudiantMedical.java
+│   │   │           └── Main.java
 │   │   └── resources/
 │   └── test/
 │       └── java/
