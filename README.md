@@ -49,7 +49,6 @@ Para ejecutar los tests:
 ```bash
 mvn test
 ```
-
 ---
 
 ## 📌 Notas
