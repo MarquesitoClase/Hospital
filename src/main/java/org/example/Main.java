@@ -27,6 +27,9 @@ public class Main {
                 "Segundo");
         StudiantMedical studiantMedical2 = new StudiantMedical(50, 17,
                 "Tercero");
-        System.out.println();
+        System.out.println(pacient1+"\n"+ pacient2);
+        System.out.println(pambulancia1+"\n"+pambulancia2);
+        System.out.println(especialist1+"\n"+especialist2);
+        System.out.println(studiantMedical1+"\n"+studiantMedical2);
     }
 }
