@@ -29,4 +29,13 @@ public class StudiantMedical extends Characters implements DoctorsInterface{
     public String CursoActual() {
         return cursoActual;
     }
+
+    @Override
+    public String toString() {
+        return "StudiantMedical{" +
+                "seminalStudyHours=" + semanalStudyHours +
+                ", semanalWorkHours=" + semanalWorkHours +
+                ", cursoActual='" + cursoActual + '\'' +
+                '}';
+    }
 }
