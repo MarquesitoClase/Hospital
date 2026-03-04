@@ -9,8 +9,8 @@ public class Pacient extends Characters implements PacientsInterface {
     private int room=0;
     private String Tratamiento;
 
-    public Pacient( Long id,String nombre, int habitacion, String tratamiento) {
-        super(id, nombre, false);
+    public Pacient( Long id,String name, int habitacion, String tratamiento) {
+        super(id, name, false);
         this.incomeDate = LocalDate.now();
         this.habitacion = habitacion;
         Tratamiento = tratamiento;

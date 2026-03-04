@@ -2,12 +2,12 @@ package org.example.personalhospital;
 
 public abstract class Characters {
     private Long id;
-    private String nombre;
+    private String name;
     private boolean esMedico;
 
-    public Characters(Long id, String nombre, boolean esMedico) {
+    public Characters(Long id, String name, boolean esMedico) {
         this.id = id;
-        this.nombre=nombre;
+        this.name = name;
         this.esMedico=esMedico;
     }
 
@@ -19,12 +19,12 @@ public abstract class Characters {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean isEsMedico() {

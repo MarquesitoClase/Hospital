@@ -3,10 +3,10 @@ package org.example.personalhospital;
 import java.time.LocalDate;
 
 public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInterface {
-    public PacientAmbulancia(String nombre, int habitacion, String tratamiento, int diasReha) {
-        super(12L, nombre, habitacion, tratamiento);
+    public PacientAmbulancia(String name, int habitacion, String tratamiento, int diasReha) {
+        super(12L, name, habitacion, tratamiento);
         this.setTratamiento(tratamiento);
-        this.outcomingDate = LocalDate.now().plusDays(diasReha);
+        this.setOutcomingDate(LocalDate.now().plusDays(diasReha));
     }
 
     @Override
@@ -22,11 +22,11 @@ public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInte
     @Override
     public String toString() {
         return "PacientAmbulancia{" +
-                "name='" + name + '\'' +
-                ", incomeDate=" + incomeDate +
-                ", outcomingDate=" + outcomingDate +
-                ", habitacion=" + habitacion +
-                ", Tratamiento='" + Tratamiento + '\'' +
+                "name='" + getname() + '\'' +
+                ", incomeDate=" + getIncomeDate() +
+                ", outcomingDate=" + getOutcomingDate() +
+                ", habitacion=" + getHabitacion() +
+                ", Tratamiento='" + getTratamiento() + '\'' +
                 '}';
     }
 }
