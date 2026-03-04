@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInterface {
     public PacientAmbulancia(String nombre, int habitacion, String tratamiento, int diasReha) {
-        super(nombre, habitacion, tratamiento);
+        super(12L, nombre, habitacion, tratamiento);
         this.setTratamiento(tratamiento);
         this.outcomingDate = LocalDate.now().plusDays(diasReha);
     }
