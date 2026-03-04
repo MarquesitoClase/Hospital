@@ -18,7 +18,7 @@ public class Main {
         PacientAmbulancia pambulancia1 = new PacientAmbulancia("María",
                 15,"Asistirla al dar a luz",10);
         PacientAmbulancia pambulancia2 = new PacientAmbulancia("José",
-                4, "Coma inducido.", 15);
+                4, "Coma inducido.", 300);
         Especialist especialist1 = new Especialist(3L, "Pepe", true,
                 LocalDate.of(LocalDate.now().getYear(), 6, 1),
                 35, 76, "Traumatologo");
