@@ -57,9 +57,9 @@ public class StudiantMedical extends Characters implements DoctorsInterface{
     @Override
     public String toString() {
         return "StudiantMedical{" +
-                "horas de estudio por semana: =" + treatment +
+                "horas de estudio por semana: " + treatment +
                 ", horas de trabajo por semana: " + semanalWorkHours +
-                ", curso actual='" + cursoActual + '\'' +
+                ", curso actual:'" + cursoActual + '\'' +
                 '}';
     }
 }
