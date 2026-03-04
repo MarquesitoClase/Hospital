@@ -6,7 +6,7 @@ public class StudentMedicalTest {
 
     @Test
     public void horasTrabajoSemanalTest(){
-        assert student.horasTrabajoSemanal()==10;
+        assert student.getSemanalWorkHours()==10;
     }
 
     @Test
@@ -15,8 +15,8 @@ public class StudentMedicalTest {
     }
 
     @Test
-    public void horasDeEstudiosPorSemanaTest(){
-        assert student.horasDeEstudiosPorSemana()==40;
+    public void semanalStudyHoursTest(){
+        assert student.semanalStudyHours()==40;
     }
 
 }

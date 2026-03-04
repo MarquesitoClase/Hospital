@@ -1,13 +1,13 @@
 package org.example.personalhospital;
 
 public class StudiantMedical extends Characters implements DoctorsInterface{
-    int semanalStudyHours;
+    int treatment;
     int semanalWorkHours;
     String cursoActual;
 
-    public StudiantMedical(Long id, String nombre, boolean esMedico, int semanalStudyHours, int semanalWorkHours, String cursoActual) {
+    public StudiantMedical(Long id, String nombre, boolean esMedico, int treatment, int semanalWorkHours, String cursoActual) {
         super(id, nombre, esMedico);
-        this.semanalStudyHours = semanalStudyHours;
+        this.treatment = treatment;
         this.semanalWorkHours = semanalWorkHours;
         this.cursoActual = cursoActual;
     }
@@ -22,20 +22,44 @@ public class StudiantMedical extends Characters implements DoctorsInterface{
         System.out.println("Estoy lleno.");
     }
 
-    public int horasDeEstudiosPorSemana(){
-        return semanalStudyHours;
+    public int semanalStudyHours(){
+        return treatment;
     }
 
     public String CursoActual() {
         return cursoActual;
     }
 
+    public int getTreatment() {
+        return treatment;
+    }
+
+    public void setTreatment(int treatment) {
+        this.treatment = treatment;
+    }
+
+    public int getSemanalWorkHours() {
+        return semanalWorkHours;
+    }
+
+    public void setSemanalWorkHours(int semanalWorkHours) {
+        this.semanalWorkHours = semanalWorkHours;
+    }
+
+    public String getCursoActual() {
+        return cursoActual;
+    }
+
+    public void setCursoActual(String cursoActual) {
+        this.cursoActual = cursoActual;
+    }
+
     @Override
     public String toString() {
         return "StudiantMedical{" +
-                "seminalStudyHours=" + semanalStudyHours +
-                ", semanalWorkHours=" + semanalWorkHours +
-                ", cursoActual='" + cursoActual + '\'' +
+                "horas de estudio por semana: =" + treatment +
+                ", horas de trabajo por semana: " + semanalWorkHours +
+                ", curso actual='" + cursoActual + '\'' +
                 '}';
     }
 }

@@ -67,9 +67,9 @@ public class Especialist extends Characters implements DoctorsInterface{
     @Override
     public String toString() {
         return "Especialist{" +
-                "inicioVacaciones=" + inicioVacaciones +
-                ", diasVacaciones=" + diasVacaciones +
-                ", laborableWeekTime=" + laborableWeekTime +
+                "inicio de las acaciones=" + inicioVacaciones +
+                ", dias de vacaciones=" + diasVacaciones +
+                ", horas semanales trabajables =" + laborableWeekTime +
                 ", especialidad='" + speciality + '\'' +
                 '}';
     }

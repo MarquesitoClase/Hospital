@@ -23,8 +23,8 @@ public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInte
     public String toString() {
         return "PacientAmbulancia{" +
                 "name='" + getName() + '\'' +
-                ", incomeDate=" + getIncomeDate() +
-                ", outcomingDate=" + getOutcomingDate() +
+                ", fecha de admisión del paciente:" + getIncomeDate() +
+                ", Fecha de alto esperada:" + getOutcomingDate() +
                 ", habitacion=" + getRoom() +
                 ", treatment='" + getTreatment() + '\'' +
                 '}';
