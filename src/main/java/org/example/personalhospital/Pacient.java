@@ -1,5 +1,6 @@
 package org.example.personalhospital;
 
+import javax.swing.table.TableCellRenderer;
 import java.time.LocalDate;
 
 public class Pacient extends Characters implements PacientsInterface {
@@ -7,30 +8,30 @@ public class Pacient extends Characters implements PacientsInterface {
     private LocalDate incomeDate;
     private LocalDate outcomingDate = null;
     private int room=0;
-    private String Tratamiento;
+    private String treatment;
 
-    public Pacient( Long id,String name, int habitacion, String tratamiento) {
+    public Pacient( Long id,String name, int room, String treatment) {
         super(id, name, false);
         this.incomeDate = LocalDate.now();
-        this.habitacion = habitacion;
-        Tratamiento = tratamiento;
+        this.setRoom(room);
+        treatment = treatment;
     }
 
     @Override
     public void Admision() {
         this.incomeDate = LocalDate.now();
         room++;
-        this.habitacion = room;
+        this.setRoom(room);
     }
 
     @Override
-    public void habitacion() {
-        System.out.println("Mi habitación es la nº "+habitacion);
+    public void room() {
+        System.out.println("Mi habitación es la nº "+room);
     }
 
     @Override
-    public void tratamiento() {
-        System.out.println(Tratamiento);
+    public void treatment() {
+        System.out.println(treatment);
     }
 
     @Override
@@ -64,22 +65,23 @@ public class Pacient extends Characters implements PacientsInterface {
         this.room = room;
     }
 
-    public String getTratamiento() {
-        return Tratamiento;
+    public String getTreatment() {
+        return treatment;
     }
 
-    public void setTratamiento(String tratamiento) {
-        Tratamiento = tratamiento;
+    public void settreatment(String treatment) {
+        treatment = treatment;
     }
 
     @Override
     public String toString() {
         return "Pacient{" +
-                "name='" + this.getNombre() + '\'' +
+                "name='" + this.getName() + '\'' +
                 ", incomeDate=" + incomeDate +
                 ", outcomingDate=" + outcomingDate +
-                ", habitacion=" + habitacion +
-                ", Tratamiento='" + Tratamiento + '\'' +
+                ", room=" + getRoom() +
+                ", treatment='" + getTreatment() + '\'' +
                 '}';
     }
+    
 }

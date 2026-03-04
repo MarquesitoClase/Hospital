@@ -6,15 +6,15 @@ public class Especialist extends Characters implements DoctorsInterface{
 
     private LocalDate inicioVacaciones;
     private int diasVacaciones=35;
-    private int horasTrabajoSemanal;
-    private String especialidad;
+    private int laborableWeekTime;
+    private String speciality;
 
-    public Especialist(Long id, String nombre, boolean esMedico, LocalDate inicioVacaciones, int diasVacaciones, int horasTrabajoSemanal, String especialidad) {
+    public Especialist(Long id, String nombre, boolean esMedico, LocalDate inicioVacaciones, int diasVacaciones, int laborableWeekTime, String speciality) {
         super(id, nombre, esMedico);
         this.inicioVacaciones = inicioVacaciones;
         this.diasVacaciones = diasVacaciones;
-        this.horasTrabajoSemanal = horasTrabajoSemanal;
-        this.especialidad = especialidad;
+        this.laborableWeekTime = laborableWeekTime;
+        this.speciality = speciality;
     }
 
     public LocalDate getInicioVacaciones() {
@@ -33,30 +33,30 @@ public class Especialist extends Characters implements DoctorsInterface{
         this.diasVacaciones = diasVacaciones;
     }
 
-    public int getHorasTrabajoSemanal() {
-        return horasTrabajoSemanal;
+    public int getlaborableWeekTime() {
+        return laborableWeekTime;
     }
 
-    public void setHorasTrabajoSemanal(int horasTrabajoSemanal) {
-        this.horasTrabajoSemanal = horasTrabajoSemanal;
+    public void setlaborableWeekTime(int laborableWeekTime) {
+        this.laborableWeekTime = laborableWeekTime;
     }
 
-    public String getEspecialidad() {
-        return especialidad;
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     @Override
-    public int horasTrabajoSemanal() {
-        return horasTrabajoSemanal;
+    public int lsaborableWeekTime() {
+        return this.laborableWeekTime;
     }
 
     @Override
     public void comer() {
-        System.out.println("Yo, el medico "+this.getNombre()+", me voy a comer.");
+        System.out.println("Yo, el medico "+this.getName()+", me voy a comer.");
     }
 
     public boolean vacaciones(){
@@ -69,8 +69,8 @@ public class Especialist extends Characters implements DoctorsInterface{
         return "Especialist{" +
                 "inicioVacaciones=" + inicioVacaciones +
                 ", diasVacaciones=" + diasVacaciones +
-                ", horasTrabajoSemanal=" + horasTrabajoSemanal +
-                ", especialidad='" + especialidad + '\'' +
+                ", laborableWeekTime=" + laborableWeekTime +
+                ", especialidad='" + speciality + '\'' +
                 '}';
     }
 }

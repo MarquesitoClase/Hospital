@@ -3,12 +3,12 @@ package org.example.personalhospital;
 public abstract class Characters {
     private Long id;
     private String name;
-    private boolean esMedico;
+    private boolean isDoctor;
 
-    public Characters(Long id, String name, boolean esMedico) {
+    public Characters(Long id, String name, boolean isDoctor) {
         this.id = id;
         this.name = name;
-        this.esMedico=esMedico;
+        this.isDoctor=isDoctor;
     }
 
     public Long getId() {
@@ -27,11 +27,11 @@ public abstract class Characters {
         this.name = name;
     }
 
-    public boolean isEsMedico() {
-        return esMedico;
+    public boolean getIsDoctor() {
+        return isDoctor;
     }
 
-    public void setEsMedico(boolean esMedico) {
-        this.esMedico = esMedico;
+    public void setIsDoctor(boolean isDoctor) {
+        this.isDoctor = isDoctor;
     }
 }

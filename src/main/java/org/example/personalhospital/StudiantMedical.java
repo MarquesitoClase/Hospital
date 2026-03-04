@@ -13,8 +13,8 @@ public class StudiantMedical extends Characters implements DoctorsInterface{
     }
 
     @Override
-    public int horasTrabajoSemanal() {
-        return semanalWorkHours;
+    public int lsaborableWeekTime() {
+        return this.semanalWorkHours;
     }
 
     @Override
