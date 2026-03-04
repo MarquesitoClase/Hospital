@@ -12,9 +12,9 @@ import java.time.LocalDate;
 public class Main {
     static void main() {
         Pacient pacient1 = new Pacient(1L,"Juan", 1,
-                "Antigripal 10 días");
+                "Antigripal 10 días", 0);
         Pacient pacient2 = new Pacient(2L, "Irene", 25,
-                "Gastrectomía Vertical.");
+                "Gastrectomía Vertical.", 7);
         PacientAmbulancia pambulancia1 = new PacientAmbulancia("María",
                 15,"Asistirla al dar a luz",10);
         PacientAmbulancia pambulancia2 = new PacientAmbulancia("José",

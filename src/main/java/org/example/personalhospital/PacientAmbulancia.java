@@ -3,8 +3,13 @@ package org.example.personalhospital;
 import java.time.LocalDate;
 
 public class PacientAmbulancia extends Pacient implements PacienteAmbulanciaInterface {
+    static Long  actualId = 0L;
+    static int actualRoom = 0;
+    //( Long id,String name, int room, String treatment, int daysInto)
     public PacientAmbulancia(String name, int habitacion, String treatment, int diasReha) {
-        super(12L, name, habitacion, treatment);
+        super(actualId, name, habitacion, treatment, actualRoom);
+        actualRoom++;
+        actualId++;
         this.settreatment(treatment);
         this.setOutcomingDate(LocalDate.now().plusDays(diasReha));
     }

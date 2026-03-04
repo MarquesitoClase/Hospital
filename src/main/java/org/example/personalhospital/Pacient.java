@@ -10,11 +10,12 @@ public class Pacient extends Characters implements PacientsInterface {
     private int room=0;
     private String treatment;
 
-    public Pacient( Long id,String name, int room, String treatment) {
+    public Pacient( Long id,String name, int room, String treatment, int daysInto) {
         super(id, name, false);
         this.incomeDate = LocalDate.now();
         this.setRoom(room);
-        treatment = treatment;
+        this.setOutcomingDate(incomeDate.plusDays(Long.parseLong(String.valueOf(daysInto))));
+        this.treatment = treatment;
     }
 
     @Override
