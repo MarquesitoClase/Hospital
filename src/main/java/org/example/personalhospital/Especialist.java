@@ -9,7 +9,8 @@ public class Especialist extends Characters implements DoctorsInterface{
     private int horasTrabajoSemanal;
     private String especialidad;
 
-    public Especialist(LocalDate inicioVacaciones, int diasVacaciones, int horasTrabajoSemanal, String especialidad) {
+    public Especialist(Long id, String nombre, boolean esMedico, LocalDate inicioVacaciones, int diasVacaciones, int horasTrabajoSemanal, String especialidad) {
+        super(id, nombre, esMedico);
         this.inicioVacaciones = inicioVacaciones;
         this.diasVacaciones = diasVacaciones;
         this.horasTrabajoSemanal = horasTrabajoSemanal;

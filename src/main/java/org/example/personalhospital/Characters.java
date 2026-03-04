@@ -5,6 +5,12 @@ public abstract class Characters {
     private String nombre;
     private boolean esMedico;
 
+    public Characters(Long id, String nombre, boolean esMedico) {
+        this.id = id;
+        this.nombre=nombre;
+        this.esMedico=esMedico;
+    }
+
     public Long getId() {
         return id;
     }

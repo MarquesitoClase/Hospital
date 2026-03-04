@@ -1,11 +1,12 @@
 package org.example.personalhospital;
 
-public class StudiantMedical implements DoctorsInterface{
+public class StudiantMedical extends Characters implements DoctorsInterface{
     int semanalStudyHours;
     int semanalWorkHours;
     String cursoActual;
 
-    public StudiantMedical(int semanalStudyHours, int semanalWorkHours, String cursoActual) {
+    public StudiantMedical(Long id, String nombre, boolean esMedico, int semanalStudyHours, int semanalWorkHours, String cursoActual) {
+        super(id, nombre, esMedico);
         this.semanalStudyHours = semanalStudyHours;
         this.semanalWorkHours = semanalWorkHours;
         this.cursoActual = cursoActual;
