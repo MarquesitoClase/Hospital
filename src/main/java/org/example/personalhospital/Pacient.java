@@ -3,12 +3,11 @@ package org.example.personalhospital;
 import java.time.LocalDate;
 
 public class Pacient extends Characters implements PacientsInterface {
-    String name;
-    LocalDate incomeDate;
-    LocalDate outcomingDate = null;
-    static int room=0;
-    int habitacion;
-    String Tratamiento;
+    private String name;
+    private LocalDate incomeDate;
+    private LocalDate outcomingDate = null;
+    private int room=0;
+    private String Tratamiento;
 
     public Pacient( Long id,String nombre, int habitacion, String tratamiento) {
         super(id, nombre, false);
@@ -65,14 +64,6 @@ public class Pacient extends Characters implements PacientsInterface {
         this.room = room;
     }
 
-    public int getHabitacion() {
-        return habitacion;
-    }
-
-    public void setHabitacion(int habitacion) {
-        this.habitacion = habitacion;
-    }
-
     public String getTratamiento() {
         return Tratamiento;
     }
@@ -84,7 +75,7 @@ public class Pacient extends Characters implements PacientsInterface {
     @Override
     public String toString() {
         return "Pacient{" +
-                "name='" + name + '\'' +
+                "name='" + this.getNombre() + '\'' +
                 ", incomeDate=" + incomeDate +
                 ", outcomingDate=" + outcomingDate +
                 ", habitacion=" + habitacion +
