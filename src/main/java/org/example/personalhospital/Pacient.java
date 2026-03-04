@@ -70,7 +70,7 @@ public class Pacient extends Characters implements PacientsInterface {
     }
 
     public void settreatment(String treatment) {
-        treatment = treatment;
+        this.treatment = treatment;
     }
 
     @Override
